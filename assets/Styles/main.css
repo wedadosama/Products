@@ -93,3 +93,35 @@ color:var(--btn-color);
   margin: 5px 0;
  color:var(--text-color);
 }
+
+footer {
+  background-color: #333;  
+  color: white;           
+  padding: 20px 0;        
+  text-align: center;      
+}
+
+footer .container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+footer p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icon {
+  color: white;
+  font-size: 16px;
+}
+
+.social-icon:hover {
+  color: var(--bg-color);
+}
