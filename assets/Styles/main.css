@@ -4,26 +4,28 @@
   box-sizing: border-box;
 }
 :root {
-  --text-color: #d2b48c;
-  --btn-color: #f4a460;
-  --bg-color: #faf0e6;
+  --text-color: #8d8985;
+  --btn-color: #7783f3;
+  --bg-color: #eda3e0;
 }
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: var(--bg-color);
 }
 .dark-theme {
-  --text-color: #d5914c;
-  --btn-color: #a0522d;
-  --bg-color: #3d2705;
+  --text-color: #19191785;
+  --btn-color: #1a246c;
+  --bg-color: #490b35;
 }
 section {
   padding: 20px 0;
   text-align: center;
+  cursor: pointer;
 }
 .container {
   padding: 0 15px;
   margin: auto;
+  cursor: pointer;
 }
 @media (min-width: 768px) {
   .container {
@@ -48,7 +50,6 @@ li {
 }
 img {
   max-width: 100%;
-  border-radius: 50%;
 }
 header {
   padding: 20px 0;
@@ -67,4 +68,28 @@ header a {
 header img {
   width: 30px;
   background-color: var(--btn-color);
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+}
+.product {
+  flex: 0 0 48%;
+  padding: 15px;
+  background-color: #f9f9f9;
+
+  margin-bottom: 20px;
+}
+
+.product h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+color:var(--btn-color);
+}
+.product p {
+  font-size: 18px;
+  margin: 5px 0;
+ color:var(--text-color);
 }
